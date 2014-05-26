@@ -44,7 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dig.cs" />
     <Compile Include="Dns\Header.cs" />
     <Compile Include="Dns\Question.cs" />
     <Compile Include="Dns\RecordReader.cs" />
@@ -114,12 +113,6 @@
     <Compile Include="Dns\Response.cs" />
     <Compile Include="Dns\RR.cs" />
     <Compile Include="Dns\Structs.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,9 +145,6 @@
     <Compile Include="TestEntry.Designer.cs">
       <DependentUpon>TestEntry.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
