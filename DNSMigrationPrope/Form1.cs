@@ -20,7 +20,6 @@ namespace DNSMigrationPrope
         {
             InitializeComponent();
             dig = new Dig();
-            Console.SetOut(new FeedbackWriter(this.textBox3));
         }
 
         private void button1_Click(object sender, EventArgs e)

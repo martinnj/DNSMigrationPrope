@@ -8,7 +8,6 @@ License
 The program itself is released under GPL v2, however
 the following files are covered by the CPOL license
 (http://www.codeproject.com/info/cpol10.aspx):
+everything in the ```DNSMigrationPrope/Dns``` folder.
 
-```Dig.cs```
-```Feedback.cs```
-as well as everything in the ```DNSMigrationPrope/Dns``` folder.
+The included icon png's are part of "Gnome Web Icons" produced by "Gnome Project" and released under GPL.
