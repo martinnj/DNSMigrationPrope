@@ -39,6 +39,7 @@
             this.getSummaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.monitorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.ipconfigflushdnsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,6 +47,7 @@
             // 
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 24);
+            this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1163, 588);
@@ -66,7 +68,8 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exitToolStripMenuItem});
+            this.exitToolStripMenuItem,
+            this.ipconfigflushdnsToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
@@ -91,21 +94,21 @@
             // buildToolStripMenuItem
             // 
             this.buildToolStripMenuItem.Name = "buildToolStripMenuItem";
-            this.buildToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.buildToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.buildToolStripMenuItem.Text = "Rebuild";
             this.buildToolStripMenuItem.Click += new System.EventHandler(this.buildToolStripMenuItem_Click);
             // 
             // startToolStripMenuItem
             // 
             this.startToolStripMenuItem.Name = "startToolStripMenuItem";
-            this.startToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
+            this.startToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.startToolStripMenuItem.Text = "Start";
             this.startToolStripMenuItem.Click += new System.EventHandler(this.startToolStripMenuItem_Click);
             // 
             // getSummaryToolStripMenuItem
             // 
             this.getSummaryToolStripMenuItem.Name = "getSummaryToolStripMenuItem";
-            this.getSummaryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.getSummaryToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.getSummaryToolStripMenuItem.Text = "Get Summary";
             this.getSummaryToolStripMenuItem.Click += new System.EventHandler(this.getSummaryToolStripMenuItem_Click);
             // 
@@ -120,6 +123,13 @@
             // 
             this.timer1.Interval = 3000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // ipconfigflushdnsToolStripMenuItem
+            // 
+            this.ipconfigflushdnsToolStripMenuItem.Name = "ipconfigflushdnsToolStripMenuItem";
+            this.ipconfigflushdnsToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.ipconfigflushdnsToolStripMenuItem.Text = "ipconfig /flushdns";
+            this.ipconfigflushdnsToolStripMenuItem.Click += new System.EventHandler(this.ipconfigflushdnsToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -151,5 +161,6 @@
         private System.Windows.Forms.ToolStripMenuItem getSummaryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem monitorToolStripMenuItem;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ToolStripMenuItem ipconfigflushdnsToolStripMenuItem;
     }
 }

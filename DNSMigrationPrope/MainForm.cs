@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Text;
+using System.Threading;
 using System.Windows.Forms;
 using System.Xml;
 using Heijden.DNS;
@@ -130,7 +132,7 @@ namespace DNSMigrationPrope
             buildSuites();
         }
 
-        private void getSummaryToolStripMenuItem_Click(object sender, EventArgs e)
+        public string GetSummary()
         {
             int oks = 0;
             int fails = 0;
@@ -161,13 +163,18 @@ namespace DNSMigrationPrope
             sb.AppendLine("Failed tests: " + fails);
             sb.AppendLine("Unknown results/do manually: " + unknowns);
             sb.AppendLine("Pending tests: " + pending);
-            MessageBox.Show(sb.ToString());
+            return sb.ToString();
+        }
+
+        private void getSummaryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(GetSummary());
         }
 
         private void monitorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var page = new TabPage {Text = "Monitor/scheduler"};
-            _monitor = new Monitor(timer1) {Dock = DockStyle.Fill};
+            _monitor = new Monitor(timer1, _entries) {Dock = DockStyle.Fill};
             page.Controls.Add(_monitor);
             tabControl1.TabPages.Add(page);
         }
@@ -175,10 +182,34 @@ namespace DNSMigrationPrope
         private void timer1_Tick(object sender, EventArgs e)
         {
             _monitor.setLastTime("" + DateTime.Now.ToLongDateString() + " - " + DateTime.Now.ToLongTimeString());
+            _monitor.textBox1.Text = GetSummary();
             foreach (var entry in _entries)
             {
                 entry.Run();
             }
+        }
+
+        private static void FlushCache()
+        {
+            var process = new Process
+            {
+                StartInfo =
+                {
+                    FileName = "ipconfig",
+                    Arguments = "/flushdns",
+                    UseShellExecute = false,
+                    RedirectStandardOutput = true,
+                    CreateNoWindow = true
+                }
+            };
+            process.Start();
+            MessageBox.Show(process.StandardOutput.ReadToEnd());
+        }
+
+        private void ipconfigflushdnsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var workerThread = new Thread(FlushCache);
+            workerThread.Start();
         }
     }
 }

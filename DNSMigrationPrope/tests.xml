@@ -1,0 +1,874 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tests>
+    
+<!-- simplesite.cz -->
+            
+<suite name="simplesite.cz@Nettica" server="64.94.136.11">
+    <test>
+        <text>A - Main</text>
+        <query>simplesite.cz</query>
+        <type>A</type>
+        <value>194.36.0.199</value>
+    </test>
+    <test>
+        <text>A - Hosting</text>
+        <query>hosting.simplesite.cz</query>
+        <type>A</type>
+        <value>194.36.0.200</value>
+    </test>
+    
+    <test>
+        <text>MX record</text>
+        <query>simplesite.cz</query>
+        <type>MX</type>
+        <value>10 gw.gns.se.</value>
+    </test>
+    
+    <test>
+        <text>CName - www</text>
+        <query>www.simplesite.cz</query>
+        <type>CNAME</type>
+        <value>simplesite.cz.</value>
+    </test>
+    <test>
+        <text>CName - isalive</text>
+        <query>isalive.simplesite.cz</query>
+        <type>CNAME</type>
+        <value>isalive.123hjemmeside.dk.</value>
+    </test>
+    <test>
+        <text>CName - Wildcard</text>
+        <query>*.simplesite.cz</query>
+        <type>CNAME</type>
+        <value>hosting.simplesite.cz.</value>
+    </test>
+    <test>
+        <text>CName - Wildcard in use</text>
+        <query>testsomethingcrazyisworking.simplesite.cz</query>
+        <type>CNAME</type>
+        <value>hosting.simplesite.cz.</value>
+    </test>
+
+    <test>
+        <text>TXT - SPF</text>
+        <query>simplesite.cz</query>
+        <type>TXT</type>
+        <value>"v=spf1 include:spf-a.123hjemmeside.dk include:spf-b.123hjemmeside.dk include:sendgrid.net include:spf.mtasv.ne ?all"</value>
+    </test>
+    <test>
+        <text>TXT - DKIM</text>
+        <query>20140414105305.pm._domainkey.simplesite.cz</query>
+        <type>TXT</type>
+        <value>"k=rsa;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCgsxDGekLdKaHuOlAQ/Ln3TJiydzMYUNH6dNKKcQ4boby1bBgaMfjPX2kOaZs/3ShodJJfJUIjVgCq1BkIvGyy9osiSIneml18gDp1/M9hulVkH1O0QPtylWrH7fCSx3osTCyhbPpasnugq3vUIko7aWInPcDNYhU5fomX7/QBsQIDAQAB"</value>
+    </test>
+</suite>
+
+<suite name="simplesite.cz@DnsMadeEasy" server="208.94.148.2">
+        <test>
+            <text>A - Main</text>
+            <query>simplesite.cz</query>
+            <type>A</type>
+            <value>194.36.0.199</value>
+        </test>
+        <test>
+            <text>A - Hosting</text>
+            <query>hosting.simplesite.cz</query>
+            <type>A</type>
+            <value>194.36.0.200</value>
+        </test>
+
+        <test>
+            <text>MX record</text>
+            <query>simplesite.cz</query>
+            <type>MX</type>
+            <value>10 gw.gns.se.</value>
+        </test>
+
+        <test>
+            <text>CName - www</text>
+            <query>www.simplesite.cz</query>
+            <type>CNAME</type>
+            <value>simplesite.cz.</value>
+        </test>
+        <test>
+            <text>CName - isalive</text>
+            <query>isalive.simplesite.cz</query>
+            <type>CNAME</type>
+            <value>isalive.123hjemmeside.dk.</value>
+        </test>
+        <test>
+            <text>CName - Wildcard</text>
+            <query>*.simplesite.cz</query>
+            <type>CNAME</type>
+            <value>hosting.simplesite.cz.</value>
+        </test>
+        <test>
+            <text>CName - Wildcard in use</text>
+            <query>testsomethingcrazyisworking.simplesite.cz</query>
+            <type>CNAME</type>
+            <value>hosting.simplesite.cz.</value>
+        </test>
+
+        <test>
+            <text>NS - DNSME</text>
+            <query>simplesite.cz</query>
+            <type>NS</type>
+            <value>ns0.dnsmadeeasy.com.</value>
+        </test>
+        <test>
+            <text>NS - BuddyNS</text>
+            <query>simplesite.cz</query>
+            <type>NS</type>
+            <value>b.ns.buddyns.com.</value>
+        </test>
+
+        <test>
+            <text>TXT - SPF</text>
+            <query>simplesite.cz</query>
+            <type>TXT</type>
+            <value>"v=spf1 include:spf-a.123hjemmeside.dk include:spf-b.123hjemmeside.dk include:sendgrid.net include:spf.mtasv.ne ?all"</value>
+        </test>
+        <test>
+            <text>TXT - DKIM</text>
+            <query>20140414105305.pm._domainkey.simplesite.cz</query>
+            <type>TXT</type>
+            <value>"k=rsa;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCgsxDGekLdKaHuOlAQ/Ln3TJiydzMYUNH6dNKKcQ4boby1bBgaMfjPX2kOaZs/3ShodJJfJUIjVgCq1BkIvGyy9osiSIneml18gDp1/M9hulVkH1O0QPtylWrH7fCSx3osTCyhbPpasnugq3vUIko7aWInPcDNYhU5fomX7/QBsQIDAQAB"</value>
+        </test>
+    </suite>
+
+<suite name="simplesite.cz@Buddyns" server="173.244.206.25">
+        <test>
+            <text>A - Main</text>
+            <query>simplesite.cz</query>
+            <type>A</type>
+            <value>194.36.0.199</value>
+        </test>
+        <test>
+            <text>A - Hosting</text>
+            <query>hosting.simplesite.cz</query>
+            <type>A</type>
+            <value>194.36.0.200</value>
+        </test>
+
+        <test>
+            <text>MX record</text>
+            <query>simplesite.cz</query>
+            <type>MX</type>
+            <value>10 gw.gns.se.</value>
+        </test>
+
+        <test>
+            <text>CName - www</text>
+            <query>www.simplesite.cz</query>
+            <type>CNAME</type>
+            <value>simplesite.cz.</value>
+        </test>
+        <test>
+            <text>CName - isalive</text>
+            <query>isalive.simplesite.cz</query>
+            <type>CNAME</type>
+            <value>isalive.123hjemmeside.dk.</value>
+        </test>
+        <test>
+            <text>CName - Wildcard</text>
+            <query>*.simplesite.cz</query>
+            <type>CNAME</type>
+            <value>hosting.simplesite.cz.</value>
+        </test>
+        <test>
+            <text>CName - Wildcard in use</text>
+            <query>testsomethingcrazyisworking.simplesite.cz</query>
+            <type>CNAME</type>
+            <value>hosting.simplesite.cz.</value>
+        </test>
+
+        <test>
+            <text>NS - DNSME</text>
+            <query>simplesite.cz</query>
+            <type>NS</type>
+            <value>ns0.dnsmadeeasy.com.</value>
+        </test>
+        <test>
+            <text>NS - BuddyNS</text>
+            <query>simplesite.cz</query>
+            <type>NS</type>
+            <value>b.ns.buddyns.com.</value>
+        </test>
+
+        <test>
+            <text>TXT - SPF</text>
+            <query>simplesite.cz</query>
+            <type>TXT</type>
+            <value>"v=spf1 include:spf-a.123hjemmeside.dk include:spf-b.123hjemmeside.dk include:sendgrid.net include:spf.mtasv.ne ?all"</value>
+        </test>
+        <test>
+            <text>TXT - DKIM</text>
+            <query>20140414105305.pm._domainkey.simplesite.cz</query>
+            <type>TXT</type>
+            <value>"k=rsa;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCgsxDGekLdKaHuOlAQ/Ln3TJiydzMYUNH6dNKKcQ4boby1bBgaMfjPX2kOaZs/3ShodJJfJUIjVgCq1BkIvGyy9osiSIneml18gDp1/M9hulVkH1O0QPtylWrH7fCSx3osTCyhbPpasnugq3vUIko7aWInPcDNYhU5fomX7/QBsQIDAQAB"</value>
+        </test>
+    </suite>
+
+<suite name="simplesite.cz@openDNS" server="208.67.222.222">
+        <test>
+            <text>A - Main</text>
+            <query>simplesite.cz</query>
+            <type>A</type>
+            <value>194.36.0.199</value>
+        </test>
+        <test>
+            <text>A - Hosting</text>
+            <query>hosting.simplesite.cz</query>
+            <type>A</type>
+            <value>194.36.0.200</value>
+        </test>
+
+        <test>
+            <text>MX record</text>
+            <query>simplesite.cz</query>
+            <type>MX</type>
+            <value>10 gw.gns.se.</value>
+        </test>
+
+        <test>
+            <text>CName - www</text>
+            <query>www.simplesite.cz</query>
+            <type>CNAME</type>
+            <value>simplesite.cz.</value>
+        </test>
+        <test>
+            <text>CName - isalive</text>
+            <query>isalive.simplesite.cz</query>
+            <type>CNAME</type>
+            <value>isalive.123hjemmeside.dk.</value>
+        </test>
+        <test>
+            <text>CName - Wildcard</text>
+            <query>*.simplesite.cz</query>
+            <type>CNAME</type>
+            <value>hosting.simplesite.cz.</value>
+        </test>
+        <test>
+            <text>CName - Wildcard in use</text>
+            <query>testsomethingcrazyisworking.simplesite.cz</query>
+            <type>CNAME</type>
+            <value>hosting.simplesite.cz.</value>
+        </test>
+
+        <test>
+            <text>NS - DNSME</text>
+            <query>simplesite.cz</query>
+            <type>NS</type>
+            <value>ns0.dnsmadeeasy.com.</value>
+        </test>
+        <test>
+            <text>NS - BuddyNS</text>
+            <query>simplesite.cz</query>
+            <type>NS</type>
+            <value>b.ns.buddyns.com.</value>
+        </test>
+
+        <test>
+            <text>TXT - SPF</text>
+            <query>simplesite.cz</query>
+            <type>TXT</type>
+            <value>"v=spf1 include:spf-a.123hjemmeside.dk include:spf-b.123hjemmeside.dk include:sendgrid.net include:spf.mtasv.ne ?all"</value>
+        </test>
+        <test>
+            <text>TXT - DKIM</text>
+            <query>20140414105305.pm._domainkey.simplesite.cz</query>
+            <type>TXT</type>
+            <value>"k=rsa;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCgsxDGekLdKaHuOlAQ/Ln3TJiydzMYUNH6dNKKcQ4boby1bBgaMfjPX2kOaZs/3ShodJJfJUIjVgCq1BkIvGyy9osiSIneml18gDp1/M9hulVkH1O0QPtylWrH7fCSx3osTCyhbPpasnugq3vUIko7aWInPcDNYhU5fomX7/QBsQIDAQAB"</value>
+        </test>
+    </suite>
+
+
+<!-- 123homepage.it -->
+                
+<suite name="123homepage.it@Nettica" server="64.94.136.11">
+    <test>
+        <text>A - Main</text>
+        <query>123homepage.it</query>
+        <type>A</type>
+        <value>194.36.0.222</value>
+    </test>
+    <test>
+        <text>A - Hosting</text>
+        <query>hosting.123homepage.it</query>
+        <type>A</type>
+        <value>194.36.0.223</value>
+    </test>
+    
+    <test>
+        <text>MX record</text>
+        <query>123homepage.it</query>
+        <type>MX</type>
+        <value>10 gw.gns.se.</value>
+    </test>
+    
+    <test>
+        <text>CName - www</text>
+        <query>www.123homepage.it</query>
+        <type>CNAME</type>
+        <value>123homepage.it.</value>
+    </test>
+    <test>
+        <text>CName - isalive</text>
+        <query>isalive.123homepage.it</query>
+        <type>CNAME</type>
+        <value>isalive.123hjemmeside.dk.</value>
+    </test>
+    <test>
+        <text>CName - Wildcard</text>
+        <query>*.123homepage.it</query>
+        <type>CNAME</type>
+        <value>hosting.123homepage.it.</value>
+    </test>
+    <test>
+        <text>CName - Wildcard in use</text>
+        <query>testsomethingcrazyisworking.123homepage.it</query>
+        <type>CNAME</type>
+        <value>hosting.123homepage.it.</value>
+    </test>
+
+    <test>
+        <text>TXT - SPF</text>
+        <query>123homepage.it</query>
+        <type>TXT</type>
+        <value>"v=spf1 include:spf-a.123hjemmeside.dk include:spf-b.123hjemmeside.dk include:sendgrid.net include:spf.mtasv.net ?all"</value>
+    </test>
+    <test>
+        <text>TXT - Google Site Verification</text>
+        <query>123homepage.it</query>
+        <type>TXT</type>
+        <value>"google-site-verification=_qMv6VLd4UaWUmxye5Z3EZdvmX7KwiSET67R6_aME6c"</value>
+    </test>
+    <test>
+        <text>TXT - DKIM</text>
+        <query>20140506093817.pm._domainkey.123homepage.it</query>
+        <type>TXT</type>
+        <value>"k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTTVr9V0/kHKf8XbrsDXReavJZhEM0O2hCVgWz2DcbHPP9bbmmDULSYMKbn8Z0/swty+ErdF7KdTN6fg4BQweYLL06voQLBZH0ln+gMomHK1x/3tjwXgKtlgWZDCku2FjoCivdyQ30oyWiA5zQaAJB03ezSGghlRH9PzOEUMUSmwIDAQAB"</value>
+    </test>
+</suite>
+
+<suite name="123homepage.it@DnsMadeEasy" server="208.94.148.2">
+        <test>
+        <text>A - Main</text>
+        <query>123homepage.it</query>
+        <type>A</type>
+        <value>194.36.0.222</value>
+    </test>
+    <test>
+        <text>A - Hosting</text>
+        <query>hosting.123homepage.it</query>
+        <type>A</type>
+        <value>194.36.0.223</value>
+    </test>
+    
+    <test>
+        <text>MX record</text>
+        <query>123homepage.it</query>
+        <type>MX</type>
+        <value>10 gw.gns.se.</value>
+    </test>
+    
+    <test>
+        <text>CName - www</text>
+        <query>www.123homepage.it</query>
+        <type>CNAME</type>
+        <value>123homepage.it.</value>
+    </test>
+    <test>
+        <text>CName - isalive</text>
+        <query>isalive.123homepage.it</query>
+        <type>CNAME</type>
+        <value>isalive.123hjemmeside.dk.</value>
+    </test>
+    <test>
+        <text>CName - Wildcard</text>
+        <query>*.123homepage.it</query>
+        <type>CNAME</type>
+        <value>hosting.123homepage.it.</value>
+    </test>
+    <test>
+        <text>CName - Wildcard in use</text>
+        <query>testsomethingcrazyisworking.123homepage.it</query>
+        <type>CNAME</type>
+        <value>hosting.123homepage.it.</value>
+    </test>
+
+    <test>
+        <text>TXT - SPF</text>
+        <query>123homepage.it</query>
+        <type>TXT</type>
+        <value>"v=spf1 include:spf-a.123hjemmeside.dk include:spf-b.123hjemmeside.dk include:sendgrid.net include:spf.mtasv.net ?all"</value>
+    </test>
+    <test>
+        <text>TXT - Google Site Verification</text>
+        <query>123homepage.it</query>
+        <type>TXT</type>
+        <value>"google-site-verification=_qMv6VLd4UaWUmxye5Z3EZdvmX7KwiSET67R6_aME6c"</value>
+    </test>
+    <test>
+        <text>TXT - DKIM</text>
+        <query>20140506093817.pm._domainkey.123homepage.it</query>
+        <type>TXT</type>
+        <value>"k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTTVr9V0/kHKf8XbrsDXReavJZhEM0O2hCVgWz2DcbHPP9bbmmDULSYMKbn8Z0/swty+ErdF7KdTN6fg4BQweYLL06voQLBZH0ln+gMomHK1x/3tjwXgKtlgWZDCku2FjoCivdyQ30oyWiA5zQaAJB03ezSGghlRH9PzOEUMUSmwIDAQAB"</value>
+    </test>
+
+        <test>
+            <text>NS - DNSME</text>
+            <query>123homepage.it</query>
+            <type>NS</type>
+            <value>ns0.dnsmadeeasy.com.</value>
+        </test>
+        <test>
+            <text>NS - BuddyNS</text>
+            <query>123homepage.it</query>
+            <type>NS</type>
+            <value>b.ns.buddyns.com.</value>
+        </test>
+    </suite>
+
+<suite name="123homepage.it@Buddyns" server="173.244.206.25">
+        <test>
+        <text>A - Main</text>
+        <query>123homepage.it</query>
+        <type>A</type>
+        <value>194.36.0.222</value>
+    </test>
+    <test>
+        <text>A - Hosting</text>
+        <query>hosting.123homepage.it</query>
+        <type>A</type>
+        <value>194.36.0.223</value>
+    </test>
+    
+    <test>
+        <text>MX record</text>
+        <query>123homepage.it</query>
+        <type>MX</type>
+        <value>10 gw.gns.se.</value>
+    </test>
+    
+    <test>
+        <text>CName - www</text>
+        <query>www.123homepage.it</query>
+        <type>CNAME</type>
+        <value>123homepage.it.</value>
+    </test>
+    <test>
+        <text>CName - isalive</text>
+        <query>isalive.123homepage.it</query>
+        <type>CNAME</type>
+        <value>isalive.123hjemmeside.dk.</value>
+    </test>
+    <test>
+        <text>CName - Wildcard</text>
+        <query>*.123homepage.it</query>
+        <type>CNAME</type>
+        <value>hosting.123homepage.it.</value>
+    </test>
+    <test>
+        <text>CName - Wildcard in use</text>
+        <query>testsomethingcrazyisworking.123homepage.it</query>
+        <type>CNAME</type>
+        <value>hosting.123homepage.it.</value>
+    </test>
+
+    <test>
+        <text>TXT - SPF</text>
+        <query>123homepage.it</query>
+        <type>TXT</type>
+        <value>"v=spf1 include:spf-a.123hjemmeside.dk include:spf-b.123hjemmeside.dk include:sendgrid.net include:spf.mtasv.net ?all"</value>
+    </test>
+    <test>
+        <text>TXT - Google Site Verification</text>
+        <query>123homepage.it</query>
+        <type>TXT</type>
+        <value>"google-site-verification=_qMv6VLd4UaWUmxye5Z3EZdvmX7KwiSET67R6_aME6c"</value>
+    </test>
+    <test>
+        <text>TXT - DKIM</text>
+        <query>20140506093817.pm._domainkey.123homepage.it</query>
+        <type>TXT</type>
+        <value>"k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTTVr9V0/kHKf8XbrsDXReavJZhEM0O2hCVgWz2DcbHPP9bbmmDULSYMKbn8Z0/swty+ErdF7KdTN6fg4BQweYLL06voQLBZH0ln+gMomHK1x/3tjwXgKtlgWZDCku2FjoCivdyQ30oyWiA5zQaAJB03ezSGghlRH9PzOEUMUSmwIDAQAB"</value>
+    </test>
+
+        <test>
+            <text>NS - DNSME</text>
+            <query>123homepage.it</query>
+            <type>NS</type>
+            <value>ns0.dnsmadeeasy.com.</value>
+        </test>
+        <test>
+            <text>NS - BuddyNS</text>
+            <query>123homepage.it</query>
+            <type>NS</type>
+            <value>b.ns.buddyns.com.</value>
+        </test>
+</suite>
+
+<suite name="123homepage.it@openDNS" server="208.67.222.222">
+        <test>
+        <text>A - Main</text>
+        <query>123homepage.it</query>
+        <type>A</type>
+        <value>194.36.0.222</value>
+    </test>
+    <test>
+        <text>A - Hosting</text>
+        <query>hosting.123homepage.it</query>
+        <type>A</type>
+        <value>194.36.0.223</value>
+    </test>
+    
+    <test>
+        <text>MX record</text>
+        <query>123homepage.it</query>
+        <type>MX</type>
+        <value>10 gw.gns.se.</value>
+    </test>
+    
+    <test>
+        <text>CName - www</text>
+        <query>www.123homepage.it</query>
+        <type>CNAME</type>
+        <value>123homepage.it.</value>
+    </test>
+    <test>
+        <text>CName - isalive</text>
+        <query>isalive.123homepage.it</query>
+        <type>CNAME</type>
+        <value>isalive.123hjemmeside.dk.</value>
+    </test>
+    <test>
+        <text>CName - Wildcard</text>
+        <query>*.123homepage.it</query>
+        <type>CNAME</type>
+        <value>hosting.123homepage.it.</value>
+    </test>
+    <test>
+        <text>CName - Wildcard in use</text>
+        <query>testsomethingcrazyisworking.123homepage.it</query>
+        <type>CNAME</type>
+        <value>hosting.123homepage.it.</value>
+    </test>
+
+    <test>
+        <text>TXT - SPF</text>
+        <query>123homepage.it</query>
+        <type>TXT</type>
+        <value>"v=spf1 include:spf-a.123hjemmeside.dk include:spf-b.123hjemmeside.dk include:sendgrid.net include:spf.mtasv.net ?all"</value>
+    </test>
+    <test>
+        <text>TXT - Google Site Verification</text>
+        <query>123homepage.it</query>
+        <type>TXT</type>
+        <value>"google-site-verification=_qMv6VLd4UaWUmxye5Z3EZdvmX7KwiSET67R6_aME6c"</value>
+    </test>
+    <test>
+        <text>TXT - DKIM</text>
+        <query>20140506093817.pm._domainkey.123homepage.it</query>
+        <type>TXT</type>
+        <value>"k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTTVr9V0/kHKf8XbrsDXReavJZhEM0O2hCVgWz2DcbHPP9bbmmDULSYMKbn8Z0/swty+ErdF7KdTN6fg4BQweYLL06voQLBZH0ln+gMomHK1x/3tjwXgKtlgWZDCku2FjoCivdyQ30oyWiA5zQaAJB03ezSGghlRH9PzOEUMUSmwIDAQAB"</value>
+    </test>
+
+        <test>
+            <text>NS - DNSME</text>
+            <query>123homepage.it</query>
+            <type>NS</type>
+            <value>ns0.dnsmadeeasy.com.</value>
+        </test>
+        <test>
+            <text>NS - BuddyNS</text>
+            <query>123homepage.it</query>
+            <type>NS</type>
+            <value>b.ns.buddyns.com.</value>
+        </test>
+</suite>
+
+    
+<!-- 123webseite.de -->
+
+     
+<suite name="123webseite.de@Nettica" server="64.94.136.11">
+    <test>
+        <text>A - Main</text>
+        <query>123webseite.de</query>
+        <type>A</type>
+        <value>194.36.0.214</value>
+    </test>
+    <test>
+        <text>A - Hosting</text>
+        <query>hosting.123webseite.de</query>
+        <type>A</type>
+        <value>194.36.0.215</value>
+    </test>
+    
+    <test>
+        <text>MX record</text>
+        <query>123webseite.de</query>
+        <type>MX</type>
+        <value>10 gw.gns.se.</value>
+    </test>
+    
+    <test>
+        <text>CName - www</text>
+        <query>www.123webseite.de</query>
+        <type>CNAME</type>
+        <value>123webseite.de.</value>
+    </test>
+    <test>
+        <text>CName - isalive</text>
+        <query>isalive.123webseite.de</query>
+        <type>CNAME</type>
+        <value>isalive.123hjemmeside.dk.</value>
+    </test>
+    <test>
+        <text>CName - Wildcard</text>
+        <query>*.123webseite.de</query>
+        <type>CNAME</type>
+        <value>hosting.123webseite.de.</value>
+    </test>
+    <test>
+        <text>CName - Wildcard in use</text>
+        <query>testsomethingcrazyisworking.123webseite.de</query>
+        <type>CNAME</type>
+        <value>hosting.123webseite.de.</value>
+    </test>
+
+    <test>
+        <text>TXT - SPF</text>
+        <query>123webseite.de</query>
+        <type>TXT</type>
+        <value>"v=spf1 include:spf-a.123hjemmeside.dk include:spf-b.123hjemmeside.dk include:sendgrid.net include:spf.mtasv.net ?all"</value>
+    </test>
+    <test>
+        <text>TXT - DKIM</text>
+        <query>20140506094253.pm._domainkey.123webseite.de</query>
+        <type>TXT</type>
+        <value>"k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCZc8b0nqxMm48Di+5dBWg5SQC70TxFHctemTZVG2BsLCl0asf4bIaO3gXE4Q5s3m4r6EebyTJGEDn31ulMnz90daD7rHjdLKRoFg+5CTMOj16S8S992v0RiUyIoHAeE6sjqpekgM5mTDtJSe5ZSfEbX1n9ll1V/3fCDrqF9kvT7wIDAQAB"</value>
+    </test>
+</suite>
+
+<suite name="123webseite.de@DnsMadeEasy" server="208.94.148.2">
+    <test>
+        <text>A - Main</text>
+        <query>123webseite.de</query>
+        <type>A</type>
+        <value>194.36.0.214</value>
+    </test>
+    <test>
+        <text>A - Hosting</text>
+        <query>hosting.123webseite.de</query>
+        <type>A</type>
+        <value>194.36.0.215</value>
+    </test>
+    
+    <test>
+        <text>MX record</text>
+        <query>123webseite.de</query>
+        <type>MX</type>
+        <value>10 gw.gns.se.</value>
+    </test>
+    
+    <test>
+        <text>CName - www</text>
+        <query>www.123webseite.de</query>
+        <type>CNAME</type>
+        <value>123webseite.de.</value>
+    </test>
+    <test>
+        <text>CName - isalive</text>
+        <query>isalive.123webseite.de</query>
+        <type>CNAME</type>
+        <value>isalive.123hjemmeside.dk.</value>
+    </test>
+    <test>
+        <text>CName - Wildcard</text>
+        <query>*.123webseite.de</query>
+        <type>CNAME</type>
+        <value>hosting.123webseite.de.</value>
+    </test>
+    <test>
+        <text>CName - Wildcard in use</text>
+        <query>testsomethingcrazyisworking.123webseite.de</query>
+        <type>CNAME</type>
+        <value>hosting.123webseite.de.</value>
+    </test>
+
+    <test>
+        <text>TXT - SPF</text>
+        <query>123webseite.de</query>
+        <type>TXT</type>
+        <value>"v=spf1 include:spf-a.123hjemmeside.dk include:spf-b.123hjemmeside.dk include:sendgrid.net include:spf.mtasv.net ?all"</value>
+    </test>
+    <test>
+        <text>TXT - DKIM</text>
+        <query>20140506094253.pm._domainkey.123webseite.de</query>
+        <type>TXT</type>
+        <value>"k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCZc8b0nqxMm48Di+5dBWg5SQC70TxFHctemTZVG2BsLCl0asf4bIaO3gXE4Q5s3m4r6EebyTJGEDn31ulMnz90daD7rHjdLKRoFg+5CTMOj16S8S992v0RiUyIoHAeE6sjqpekgM5mTDtJSe5ZSfEbX1n9ll1V/3fCDrqF9kvT7wIDAQAB"</value>
+    </test>
+
+        <test>
+            <text>NS - DNSME</text>
+            <query>123webseite.de</query>
+            <type>NS</type>
+            <value>ns0.dnsmadeeasy.com.</value>
+        </test>
+        <test>
+            <text>NS - BuddyNS</text>
+            <query>123webseite.de</query>
+            <type>NS</type>
+            <value>b.ns.buddyns.com.</value>
+        </test>
+    </suite>
+
+<suite name="123webseite.de@Buddyns" server="173.244.206.25">
+    <test>
+        <text>A - Main</text>
+        <query>123webseite.de</query>
+        <type>A</type>
+        <value>194.36.0.214</value>
+    </test>
+    <test>
+        <text>A - Hosting</text>
+        <query>hosting.123webseite.de</query>
+        <type>A</type>
+        <value>194.36.0.215</value>
+    </test>
+    
+    <test>
+        <text>MX record</text>
+        <query>123webseite.de</query>
+        <type>MX</type>
+        <value>10 gw.gns.se.</value>
+    </test>
+    
+    <test>
+        <text>CName - www</text>
+        <query>www.123webseite.de</query>
+        <type>CNAME</type>
+        <value>123webseite.de.</value>
+    </test>
+    <test>
+        <text>CName - isalive</text>
+        <query>isalive.123webseite.de</query>
+        <type>CNAME</type>
+        <value>isalive.123hjemmeside.dk.</value>
+    </test>
+    <test>
+        <text>CName - Wildcard</text>
+        <query>*.123webseite.de</query>
+        <type>CNAME</type>
+        <value>hosting.123webseite.de.</value>
+    </test>
+    <test>
+        <text>CName - Wildcard in use</text>
+        <query>testsomethingcrazyisworking.123webseite.de</query>
+        <type>CNAME</type>
+        <value>hosting.123webseite.de.</value>
+    </test>
+
+    <test>
+        <text>TXT - SPF</text>
+        <query>123webseite.de</query>
+        <type>TXT</type>
+        <value>"v=spf1 include:spf-a.123hjemmeside.dk include:spf-b.123hjemmeside.dk include:sendgrid.net include:spf.mtasv.net ?all"</value>
+    </test>
+    <test>
+        <text>TXT - DKIM</text>
+        <query>20140506094253.pm._domainkey.123webseite.de</query>
+        <type>TXT</type>
+        <value>"k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCZc8b0nqxMm48Di+5dBWg5SQC70TxFHctemTZVG2BsLCl0asf4bIaO3gXE4Q5s3m4r6EebyTJGEDn31ulMnz90daD7rHjdLKRoFg+5CTMOj16S8S992v0RiUyIoHAeE6sjqpekgM5mTDtJSe5ZSfEbX1n9ll1V/3fCDrqF9kvT7wIDAQAB"</value>
+    </test>
+
+        <test>
+            <text>NS - DNSME</text>
+            <query>123webseite.de</query>
+            <type>NS</type>
+            <value>ns0.dnsmadeeasy.com.</value>
+        </test>
+        <test>
+            <text>NS - BuddyNS</text>
+            <query>123webseite.de</query>
+            <type>NS</type>
+            <value>b.ns.buddyns.com.</value>
+        </test>
+</suite>
+
+<suite name="123webseite.de@openDNS" server="208.67.222.222">
+    <test>
+        <text>A - Main</text>
+        <query>123webseite.de</query>
+        <type>A</type>
+        <value>194.36.0.214</value>
+    </test>
+    <test>
+        <text>A - Hosting</text>
+        <query>hosting.123webseite.de</query>
+        <type>A</type>
+        <value>194.36.0.215</value>
+    </test>
+    
+    <test>
+        <text>MX record</text>
+        <query>123webseite.de</query>
+        <type>MX</type>
+        <value>10 gw.gns.se.</value>
+    </test>
+    
+    <test>
+        <text>CName - www</text>
+        <query>www.123webseite.de</query>
+        <type>CNAME</type>
+        <value>123webseite.de.</value>
+    </test>
+    <test>
+        <text>CName - isalive</text>
+        <query>isalive.123webseite.de</query>
+        <type>CNAME</type>
+        <value>isalive.123hjemmeside.dk.</value>
+    </test>
+    <test>
+        <text>CName - Wildcard</text>
+        <query>*.123webseite.de</query>
+        <type>CNAME</type>
+        <value>hosting.123webseite.de.</value>
+    </test>
+    <test>
+        <text>CName - Wildcard in use</text>
+        <query>testsomethingcrazyisworking.123webseite.de</query>
+        <type>CNAME</type>
+        <value>hosting.123webseite.de.</value>
+    </test>
+
+    <test>
+        <text>TXT - SPF</text>
+        <query>123webseite.de</query>
+        <type>TXT</type>
+        <value>"v=spf1 include:spf-a.123hjemmeside.dk include:spf-b.123hjemmeside.dk include:sendgrid.net include:spf.mtasv.net ?all"</value>
+    </test>
+    <test>
+        <text>TXT - DKIM</text>
+        <query>20140506094253.pm._domainkey.123webseite.de</query>
+        <type>TXT</type>
+        <value>"k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCZc8b0nqxMm48Di+5dBWg5SQC70TxFHctemTZVG2BsLCl0asf4bIaO3gXE4Q5s3m4r6EebyTJGEDn31ulMnz90daD7rHjdLKRoFg+5CTMOj16S8S992v0RiUyIoHAeE6sjqpekgM5mTDtJSe5ZSfEbX1n9ll1V/3fCDrqF9kvT7wIDAQAB"</value>
+    </test>
+
+        <test>
+            <text>NS - DNSME</text>
+            <query>123webseite.de</query>
+            <type>NS</type>
+            <value>ns0.dnsmadeeasy.com.</value>
+        </test>
+        <test>
+            <text>NS - BuddyNS</text>
+            <query>123webseite.de</query>
+            <type>NS</type>
+            <value>b.ns.buddyns.com.</value>
+        </test>
+</suite>
+
+</tests>
